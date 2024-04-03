@@ -1,0 +1,23 @@
+.container-skills{
+    padding: 50px 80px;
+}
+.container-skills h1{
+    font-size: 40px;
+    
+}
+.container-skills-items{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skill img{
+width: 120px;
+height: 100px;    
+}
+.skill{
+    padding-right: 100px;
+    padding-bottom: 30px;
+
+}

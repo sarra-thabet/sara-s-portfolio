@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('styles/app.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/career.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/skills.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/portfolio.css') }}">
+            <link rel="stylesheet" href="{{ asset('styles/footer.css') }}">
+
+        {% endblock %}
+        {% block javascripts %}
+            {{ importmap() }}
+            <script src="https://kit.fontawesome.com/dde9b2d3cb.js" crossorigin="anonymous"></script>
+        {% endblock %}
+    </head>
+    <body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="#intro">INTRO</a></li>
+            <li><a href="#career">CAREER</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+        </ul>
+    </nav>
+    </header>
+      <main>
+        <section id="intro" style="height: 700px;">
+            <div class="intro-text">
+            <h1>Sarah Thabet</h1>
+            <p>    Hello, my name is Sarra thabet im Tunisian. I am a junior Fullstack web developer . I have an experience in developing websites and web applications.And I am currently interested in improving my skills . My skills include HTML, CSS, Javascript,php, ReactJs, java, symfony, django and more.</div>
+            </p>
+        
+       <div class="intro-image ">
+       </div>
+       </section>
+        <section id="career">
+            {% include 'career.html.twig' %}
+           
+        </section>
+        <section id="skills" >
+            {% include 'skills.html.twig' %}
+           
+        </section>
+        <section id="portfolio">
+             {% include 'portfolio.html.twig' %}
+            
+        </section>
+        <section id="portfolio">
+             {% include 'footer.html.twig' %}
+            
+        </section>
+    </main>
+     <script>
+        // Smooth scrolling when clicking header links
+        document.querySelectorAll('header a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                // Scroll smoothly to the target section
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    </body>
+</html>

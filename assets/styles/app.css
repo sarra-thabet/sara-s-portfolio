@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   /* Change the background color as needed */
+    padding: 10px 0; /* Adjust padding as needed */
+    z-index: 1000; /* Ensure the header appears above other content */
+}
+
+/* Add some styling to the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border-radius: 30px;
+}
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: pink; /* Change the background color on hover as needed */
+}
+#intro{
+    background: url(../images/background1.jpg) center center/cover;
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    
+}
+#career{
+    background-color: rgb(246, 221, 246);
+    
+
+}
+.intro-text{
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+    background-color:  rgba(255, 255, 255, 0.5);
+    margin: 30px;
+    padding: 20px 20px;
+}
+h1{
+    font-size: 50px;
+    font-weight: 400;
+    padding-bottom: 15px ;
+}
+.intro-image{
+    width: 40%;
+    height: 400px;
+    border-radius: 20px;
+    background:url(../images/photo-cv-4.jpeg) center center/cover;
+    margin: 30px;
+    padding: 20px 20px;
+}

@@ -1,0 +1,54 @@
+.container-career{
+    padding: 40px 90px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+
+    
+}
+.container-career h1{
+    font-size: 40px;
+
+}
+.container-career h2{
+    font-size: 20px;
+    padding: 8px 0 ;
+}
+
+.container-career-education{
+    width: 50%;
+}
+.container-career-experience{
+    width: 50%;
+}
+.experience-item{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.experience-item-image img{
+width: 50px;
+height: 20px;   
+}
+.experience-item-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.education-item{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+.education-item-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.education-item-image img{
+    width: 50px;
+    height: 50px;   
+    }
